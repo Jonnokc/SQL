@@ -43,7 +43,7 @@ SELECT fully_qualified_name
 			)
 		) AS met_percentage
 
-FROM < client >.ph_f_measure_outcome
+FROM <client>.ph_f_measure_outcome
 
 WHERE population_id = '<POP_ID>'
 
