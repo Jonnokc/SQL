@@ -1,0 +1,4 @@
+SELECT *
+FROM CONCEPTMAPSUPPORT.TENANTS
+Where "TENANT_SHORT_NAME" LIKE'%LIFE_MD%' (<-- Replace with client mnumonic to help limit)
+ORDER BY TENANT_SHORT_NAME

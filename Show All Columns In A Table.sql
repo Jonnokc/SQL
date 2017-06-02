@@ -1,1 +1,3 @@
-Select * from 'Client_Schema'.PH_F_Dashboard_Registry_Measure limit 20
+SELECT *
+FROM 'Client_Schema'.PH_F_DASHBOARD_REGISTRY_MEASURE
+LIMIT 20
