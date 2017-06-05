@@ -1,4 +1,5 @@
 SELECT DISTINCT CONSUMER_NAME,
+                CONSUMER_ID,
                 CODE_SYSTEM_ID,
                 CODE_NAME,
                 CODE_VALUE,
