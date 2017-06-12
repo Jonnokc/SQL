@@ -1,0 +1,4 @@
+SELECT *
+ FROM <Client Schema Name>.PH_D_ONTOLOGY
+ WHERE POPULATION_ID = <Population ID>
+LIMIT 20
