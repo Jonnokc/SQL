@@ -1,4 +1,4 @@
 SELECT *
 FROM CONCEPTMAPSUPPORT.TENANTS
-Where "TENANT_SHORT_NAME" LIKE'%CHLD_DC%' (<-- Replace with client mnumonic to help limit)
+WHERE "TENANT_SHORT_NAME" LIKE'%CHLD_DC%' -- (<-- Replace with client mnumonic to help limit)
 ORDER BY TENANT_SHORT_NAME
