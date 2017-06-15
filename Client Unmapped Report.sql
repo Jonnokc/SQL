@@ -1,13 +1,8 @@
-SELECT DISTINCT CONSUMER_NAME,
-                CODE_SYSTEM_ID,
-                CODE_NAME,
-                CODE_VALUE,
-                MAPPING_STATUS,
-                ACTIVITY_COUNT
+SELECT *
 FROM CONCEPTMAPSUPPORT.CODES_MAPPINGS
-WHERE CONSUMER_ID IN (198)-- <-CLIENT IDENTIFIER
-  AND (MAPPING_STATUS !='Validated'
-       OR (MAPPING_STATUS='Validated'
+WHERE CONSUMER_ID IN (503,143)-- <-CLIENT IDENTIFIER
+  AND (MAPPING_STATUS Not In ('Validated', 'Reviewed', 'Recommended')
+       OR (MAPPING_STATUS ='Validated'
            AND CONCEPT_ID IS NULL))
   AND CODE_SYSTEM_ID!='urn:cerner:coding:codingsystem:codeset:93'
   AND CODE_SYSTEM_ID!='urn:cerner:coding:codingsystem:codeset:200'
